@@ -1,0 +1,663 @@
+@charset "utf-8";
+
+/***********************
+******** Global ********
+***********************/
+.clearfix {clear: both;height: 0;}
+.centered {text-align: center;}
+.strong {font-weight: bold;}
+.italic {font-style: italic;}
+
+#container {
+    width:100%;
+    min-width: 300px;
+    max-width:960px;
+    margin:0px auto;
+    height:auto;
+    background:#FFF;
+    overflow:hidden;
+    font-family: Helvetica, Arial;
+}
+
+/***********************
+******** Header ********
+***********************/
+#header {
+  display: block;
+  width: 100%;
+  padding: 10px 0px 0px 0px;
+}
+
+#logo {
+  display: block;
+  float: none;
+  margin: 0px auto 15px auto;
+  width: 100%;
+  max-width: 300px;
+  height: 45px;
+}
+
+#logo a img {
+  border:none;
+  max-width: 300px;
+}
+
+/***********************
+****** Navigation ******
+***********************/
+#nav {
+  display: block;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  clear: both;
+  border-top: 2px solid #fefefe;
+  border-bottom: 2px solid #fefefe;
+}
+
+#nav ul {
+  font-size:0.8em;
+  font-weight: bold;
+  padding: 0px;
+  margin: 0px;
+}
+
+#nav ul li.games {
+  list-style: none;
+  display: inline-block;
+  float: left;
+  width: 20%;
+  background-color: #0a0a0a;
+}
+
+#nav ul li.magic,
+#nav ul li.magicsingles,
+#nav ul li.fab,
+#nav ul li.ygo,
+#nav ul li.sports {
+  list-style: none;
+  display: inline-block;
+  float: left;
+  width: 16%;
+  background-color: #0a0a0a;
+}
+
+#nav ul li a {
+  display: block;
+  padding: 12px 2%;
+  text-decoration: none;
+  text-align: center;
+  color: #fefefe;
+}
+
+#nav ul li a:hover {
+  color: #00aeef;
+  background-color: #fefefe;
+}
+
+#nav ul li.magic a,
+#nav ul li.films a,
+#nav ul li.games a,
+#nav ul li.mobiles a,
+#nav ul li.tech a {
+  border-right: 2px solid #fefefe;
+}
+
+@media only screen and (max-width:780px) {
+  #nav ul li.games,
+  #nav ul li.magic,
+  #nav ul li.films,
+  #nav ul li.mobiles,
+  #nav ul li.tech,
+  #nav ul li.books {
+    list-style: none;
+    display: inline-block;
+    float: left;
+    width: 33.3%;
+    background-color: #0a0a0a;
+  }
+
+  #nav ul li.magic a,
+  #nav ul li.films a,
+  #nav ul li.mobiles a,
+  #nav ul li.tech a {
+    border-right: 2px solid #fefefe;
+  }
+
+  #nav ul li.books a,
+  #nav ul li.games a {
+    border-right: none;
+  }
+
+  #nav ul li.magic a,
+  #nav ul li.films a,
+  #nav ul li.games a {
+    border-bottom: 2px solid #fefefe;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  #nav ul li.magic,
+  #nav ul li.films,
+  #nav ul li.games,
+  #nav ul li.mobiles,
+  #nav ul li.tech,
+  #nav ul li.books {
+    list-style: none;
+    display: inline-block;
+    float: left;
+    width: 50%;
+    background-color: #0a0a0a;
+  }
+
+  #nav ul li.magic a,
+  #nav ul li.films a,
+  #nav ul li.games a,
+  #nav ul li.mobiles a,
+  #nav ul li.books a,
+  #nav ul li.tech a {
+    border-bottom: 2px solid #fefefe;
+  }
+
+  #nav ul li.magic a,
+  #nav ul li.games a,
+  #nav ul li.tech a {
+    border-right: 2px solid #fefefe;
+  }
+
+  #nav ul li.films a,
+  #nav ul li.mobiles a,
+  #nav ul li.books a {
+    border-right: none;
+  }
+}
+
+/***********************
+***** Image Slider *****
+***********************/
+#slider {
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  #slider {
+    display: none !important;
+  }
+}
+
+#slider figure img {
+  width:20%;
+  float:left;
+  border:none;
+}
+
+#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; 
+}
+
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+/***********************
+******* Item Info ******
+***********************/
+#itemInfo {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#mainImage {
+  display: inline-block;
+  background:url('loader.gif') no-repeat 50% 50%;
+  float:left;
+  width: 48%;
+  max-width:437px;
+  height:auto;
+  /*min-height:437px;*/
+  margin:0px 0px 30px 0px;
+  overflow:hidden;
+}
+
+#mainImage img {
+  display: block;
+  position: relative;
+  margin: auto;
+  width: 98%;
+  height: auto;
+  max-width: 330px;
+}
+
+@media only screen and (max-width:659px) {
+  #mainImage {
+    width: 100%;
+    max-width: none;
+  }
+  #mainImage img {
+    width: 85%;
+  }
+}
+
+#fullInfo {
+  display: inline-block;
+  float: right;
+  width: 50%;
+}
+
+@media only screen and (max-width:659px) {
+  #fullInfo {
+    width: 94%;
+    padding: 20px 3% 0px 3%;
+  }
+}
+
+#fullInfo h1 {
+  font-size: 1.375em;
+  font-weight: normal;
+}
+
+#fullInfo span.label {
+  display: inline-block;
+  float: left;
+  clear: left;
+  width: 28%;
+  padding-right: 2%;
+  color: #0a0a0a;
+  font-size: 0.875em;
+  margin: 0px 0px 8px 0px;
+}
+
+#fullInfo span.info {
+  display: inline-block;
+  float: left;
+  font-style: italic;
+  width: 70%;
+  color: #0a0a0a;
+  font-size: 0.875em;
+  margin: 0px 0px 8px 0px;
+}
+
+#fullInfo #feedback {
+  display: block;
+  clear: both;
+  width:100%;
+  height:30px;
+  border-top:1px solid #333;
+  border-bottom:1px solid #333;
+  margin-top: 20px;
+}
+
+@media only screen and (min-width:660px) and (max-width:980px) {
+  #fullInfo #feedback {
+    height: auto;
+    min-height: 30px;
+  }
+}
+
+#fullInfo #feedback a,
+#fullInfo #feedback img {
+  line-height:30px;
+  float:left;
+  text-decoration:none;
+  font-size:0.850em;
+}
+
+@media only screen and (min-width:660px) and (max-width:980px) {
+  #fullInfo #feedback img {
+    clear: left;
+  }
+}
+
+@media only screen and (max-width:450px) {
+  #fullInfo #feedback img {
+    clear: left;
+  }
+  #fullInfo #feedback {
+    height: auto;
+    min-height: 30px;
+  }
+}
+
+#fullInfo #feedback a.feedback {
+  font-weight:bold;
+  font-style:italic;
+  font-size:0.850em;
+  color: #333;
+}
+
+
+/* Track list */
+#trackList {
+  display: block;
+  width: 96%;
+  padding: 0px 2% 20px 2%;
+  clear: both;
+}
+
+#trackList p {
+  font-size: 0.875em;
+  line-height: 1.5em;
+}
+
+/* Track list table */
+table.trackListings {
+  width: 100%;
+  padding: 20px 0px 10px 0px;
+  font-size: 0.875em;
+}
+
+table.trackListings tr.heading {
+  font-weight: bold;
+}
+
+table.trackListings tr.heading th.disc{
+  width: 10%;
+  text-align: left;
+  padding-bottom: 2px;
+}
+
+table.trackListings tr.heading th.track{
+  width: 10%;
+  text-align: left;
+  padding-bottom: 2px;
+}
+
+table.trackListings tr.heading th.name{
+  width: 70%;
+  text-align: left;
+  padding-bottom: 2px;
+}
+
+table.trackListings tr.heading th.duration{
+  width: 10%;
+  text-align: left;
+  padding-bottom: 2px;
+} 
+
+@media only screen and (max-width:500px) {
+  table.trackListings tr.heading th.disc{
+    display: none;
+  }
+  table.trackListings tr.heading th.track{
+    width: 13%;
+  }
+  table.trackListings tr.heading th.name{
+    width: 68%;
+  }
+  table.trackListings tr.heading th.duration{
+    width: 13%;
+  }
+}
+
+/***********************
+**** Item Info Tech ****
+***********************/
+#itemInfo.tech {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+#itemInfo.tech .top {
+  display: block;
+  width: 98%;
+  padding: 20px 1% 30px 1%;
+  text-align: center;
+  font-size: 1.250em;
+}
+
+#itemInfo.tech .left {
+  display: inline-block;
+  width: 47%;
+  padding: 0px 0% 0px 1%;
+  float: left;
+}
+
+#itemInfo.tech .right {
+  display: inline-block;
+  width: 47%;
+  padding: 0px 1% 0px 0%;
+  float: right;
+}
+
+@media only screen and (max-width:600px) {
+  #itemInfo.tech .left {
+    display: inline-block;
+    width: 98%;
+    padding: 0px 1% 0px 1%;
+  }
+
+  #itemInfo.tech .right {
+    display: inline-block;
+    width: 98%;
+    padding: 0px 1% 0px 1%;
+  }
+}
+
+#itemInfo.tech h2 {
+  font-size: 1.250em;
+  color: #00aeef;
+  margin-top: 0px;
+}
+
+#itemInfo.tech ul li {
+  padding-bottom: 15px;
+}
+
+#itemInfo.tech ul.tick li {
+  list-style-type: none;
+  margin-left: -10px;
+}
+
+#itemInfo.tech ul.tick li::before {
+  content: "✓";
+  position: relative;
+  left: -10px;
+}
+
+/***********************
+***** Free Delivery ****
+***********************/
+#freeDelivery {
+  display: block;
+  width: 100%;
+  background-color: #00aeef;
+  text-align: center;
+}
+
+#freeDelivery p {
+  color: #333;
+  font-size: 1.5em;
+  padding: 20px 0px;
+  margin: 0px auto;
+  font-weight: bold;
+}
+
+#freeDelivery p span.white {
+  color: #FFF;
+}
+
+/***********************
+****** Bottom Ads ******
+***********************/
+#bottomLinks {
+  display: block;
+  width: 100%;
+  margin: 30px 0px 0px 0px;
+}
+
+#bottomLinks a {
+  display: block;
+  float: left;
+  width: 23%;
+  padding: 0px 1%;
+  margin-bottom: 15px;
+}
+
+#bottomLinks a:hover {
+  opacity: 0.8;
+}
+
+#bottomLinks a img {
+  width: 100%;
+  height: auto;
+}
+
+
+@media only screen and (max-width:600px) {
+  #bottomLinks a {
+    display: block;
+    float: left;
+    width: 48%;
+    padding: 0px 1%;
+    margin-bottom: 10px;
+  }
+}
+
+/***********************
+****** Newsletter ******
+***********************/
+#newsletter {
+  display: block;
+  width: 100%;
+  margin: 20px 0px;
+  background-color: #333;
+}
+
+#newsletter p.dontmissout {
+  display: inline-block;
+  float: left;
+  width: 60%;
+  color: #fefefe;
+  padding: 0px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1em;
+  text-align: left;
+  margin: 20px 1% 20px 4%;
+}
+
+#newsletter .right {
+  display: inline-block;;
+  float: right;
+  width: 34%;
+  padding: 0px;
+  margin: 10px 0px;
+}
+
+#newsletter .right a.signup {
+  display: inline-block;
+  background-color: #00aeef;
+  color: #FFF;
+  padding: 10px 15px 10px 15px;
+  margin: 0px 50px 0px 0px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1em;
+  text-align: center;
+  float: left;
+  width: 130px;
+}
+
+@media only screen and (max-width:620px) {
+  #newsletter p.dontmissout {
+    width: 45%;
+  }
+  #newsletter .right  {
+    width: 50%;
+  }
+}
+
+/***********************
+******** Footer ********
+***********************/
+#footer {
+  display: block;
+  width: 100%;
+  margin: 0px 0px 20px 0px;
+  border-top: #333 solid 1px;
+  border-bottom: #333 solid 1px;
+}
+
+#footer a.logo {
+  float: left;
+  display: inline-block;
+  /*width: 144px;
+  height: 41px;*/
+  padding: 4px 0px 4px 0px;
+}
+
+#footer a.logo img {
+  border: none !important;
+  max-width: 200px;
+}
+
+@media only screen and (max-width:620px) {
+  #footer a.logo {
+    float: none !important;
+    margin: auto !important;
+    padding: 8px 0px !important;
+    display: block !important;
+    text-align: center;
+  }
+}
+
+#footer ul.rightnav {
+  display: inline-block;
+  float: right;
+  padding: 0px;
+  margin: 10px auto 10px auto;
+}
+
+@media only screen and (max-width:620px) {
+  #footer ul.rightnav {
+    width: 100%;
+    clear: left;
+    margin: 0px 0px 10px 0px;
+    text-align: center;
+  }
+  #footer ul.rightnav li {
+    float: none !important
+  }
+  #footer ul.rightnav li.delivery {
+    border-left: none !important;
+  }
+}
+
+#footer ul.rightnav li {
+  list-style: none;
+  display: inline-block;
+  float: right;
+}
+
+#footer ul.rightnav li.delivery,
+#footer ul.rightnav li.faqs,
+#footer ul.rightnav li.contact,
+#footer ul.rightnav li.about {
+  border-left: 1px solid #333;
+}
+
+#footer ul.rightnav li a {
+  display: block;
+  padding: 5px 8px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 0.850em;
+}

@@ -71,10 +71,10 @@
 }
 
 #nav ul li.magic,
-#nav ul li.magicsingles,
-#nav ul li.allgames,
+#nav ul li.pokemon,
 #nav ul li.ygo,
-#nav ul li.sports {
+#nav ul li.sports,
+#nav ul li.allgames {
   list-style: none;
   display: inline-block;
   float: left;
@@ -104,12 +104,12 @@
 }
 
 @media only screen and (max-width:780px) {
-  #nav ul li.games,
   #nav ul li.magic,
-  #nav ul li.films,
-  #nav ul li.mobiles,
-  #nav ul li.tech,
-  #nav ul li.books {
+  #nav ul li.pokemon,
+  #nav ul li.fab,
+  #nav ul li.ygo,
+  #nav ul li.sports,
+  #nav ul li.allgames {
     list-style: none;
     display: inline-block;
     float: left;
@@ -118,31 +118,31 @@
   }
 
   #nav ul li.magic a,
-  #nav ul li.films a,
-  #nav ul li.mobiles a,
-  #nav ul li.tech a {
+  #nav ul li.pokemon a,
+  #nav ul li.fab a,
+  #nav ul li.ygo a {
     border-right: 2px solid #fefefe;
   }
 
-  #nav ul li.books a,
-  #nav ul li.games a {
+  #nav ul li.fab a,
+  #nav ul li.magic a {
     border-right: none;
   }
 
   #nav ul li.magic a,
-  #nav ul li.films a,
-  #nav ul li.games a {
+  #nav ul li.pokemon a,
+  #nav ul li.ygo a {
     border-bottom: 2px solid #fefefe;
   }
 }
 
 @media only screen and (max-width:500px) {
   #nav ul li.magic,
-  #nav ul li.films,
-  #nav ul li.games,
-  #nav ul li.mobiles,
-  #nav ul li.tech,
-  #nav ul li.books {
+  #nav ul li.pokemon,
+  #nav ul li.fab,
+  #nav ul li.ygo,
+  #nav ul li.sports,
+  #nav ul li.allgames {
     list-style: none;
     display: inline-block;
     float: left;
@@ -151,23 +151,23 @@
   }
 
   #nav ul li.magic a,
-  #nav ul li.films a,
-  #nav ul li.games a,
-  #nav ul li.mobiles a,
-  #nav ul li.books a,
-  #nav ul li.tech a {
+  #nav ul li.pokemon a,
+  #nav ul li.fab a,
+  #nav ul li.ygo a,
+  #nav ul li.sports a,
+  #nav ul li.allgames a {
     border-bottom: 2px solid #fefefe;
   }
 
   #nav ul li.magic a,
-  #nav ul li.games a,
-  #nav ul li.tech a {
+  #nav ul li.pokemon a,
+  #nav ul li.fab a {
     border-right: 2px solid #fefefe;
   }
 
-  #nav ul li.films a,
-  #nav ul li.mobiles a,
-  #nav ul li.books a {
+  #nav ul li.ygo a,
+  #nav ul li.sports a,
+  #nav ul li.allgames a {
     border-right: none;
   }
 }
